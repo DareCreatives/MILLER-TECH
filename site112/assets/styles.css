@@ -1,0 +1,215 @@
+/* Default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --primary-color: #0047e0;
+    --text-dark: #1e293b;
+    --text-light: #64748b;
+    --bg-light: #f8fafc;
+    --white: #ffffff;
+    --card-bg: #ffffff;
+    --border-color: #e2e8f0;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+}
+
+/* Contact Dislay */ 
+.container{
+    background: var(--white);
+    border: 1px solid #e2e8f0;
+    display: flex;
+    gap: 40px
+}
+
+.box{
+    width: 50%;
+}
+
+/* Layout & Header */
+header {
+    background-color: var(--white);
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1.25rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-light);
+    margin-left: 1.5rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+
+
+.card {
+    background: var(--card-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-light);
+    font-size: 0.875rem;
+    border-top: 1px solid var(--border-color);
+    background-color: var(--white);
+    margin-top: 4rem;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Hero Section */
+.hero {
+    max-width: 800px;
+    margin: 5rem auto;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--text-dark);
+}
+
+.hero p {
+    font-size: 1.125rem;
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.75rem 1.75rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+
+
+
+
+
+/* Header Styles */
+header {
+    background-color: #dfdfdf;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Main Content Styles */
+main {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Features */
+.features {
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+}
+
+.card p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+/* Button Styling */
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+    
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.8rem;
+    color: #888;
+    border-top: 1px solid #a8a8a8;
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
