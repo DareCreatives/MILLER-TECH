@@ -70,18 +70,46 @@ h1 {
     margin: 5rem auto;
     text-align: center;
     padding: 0 1.5rem;
+    background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=600&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-radius: 12px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark overlay for better text readability on background image */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--text-dark);
+    color: var(--white);
+    position: relative;
+    z-index: 2;
 }
 
 .hero p {
     font-size: 1.125rem;
-    color: var(--text-light);
+    color: var(--white);
     margin-bottom: 2rem;
+    position: relative;
+    z-index: 2;
 }
 
 /* Buttons */
@@ -94,6 +122,8 @@ h1 {
     text-decoration: none;
     font-weight: 500;
     transition: opacity 0.2s;
+    position: relative;
+    z-index: 2;
 }
 
 .btn:hover {
